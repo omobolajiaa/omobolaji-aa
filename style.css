@@ -431,3 +431,94 @@ ol li {
     box-shadow: 0 0 0.8rem var(--blue-color);
     color: var(--text-color);
 }
+
+/* ======= MOBILE PHONES (max-width: 768px) ====== */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 2rem 2.5rem;
+        font-size: 2rem;
+    }
+    .Home {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 10rem;
+    }
+    .content-box {
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        align-items: flex-start;
+    }
+    .img {
+        width: 60%;
+        margin: 2rem auto 2rem auto;
+        display: block;
+        margin-right: 0;
+    }
+    .text-box {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 2rem;
+    }
+    .content-box .icon-box {
+        flex-direction: row;
+        gap: 2rem;
+        margin: 2rem 0 0 0;
+        justify-content: flex-start;
+    }
+    .about {
+        flex-direction: column;
+        padding: 8rem 2rem 2rem 2rem;
+        align-items: flex-start;
+    }
+    .about-container h2,
+    .about-container p {
+        margin-left: 0;
+        text-align: left;
+    }
+    .projects {
+        flex-direction: column;
+        padding: 8rem 1.5rem 2rem 1.5rem;
+    }
+    .projects-container h2 {
+        margin-left: 0;
+        font-size: 3rem;
+        text-align: left;
+    }
+    .project-cards {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .services {
+        padding: 8rem 1.5rem 2rem 1.5rem;
+        max-width: 100%;
+    }
+    .services-container h2 {
+        font-size: 3rem;
+    }
+    .service-boxes {
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+    }
+    .contact-container h2 {
+        margin-left: 0;
+        font-size: 3rem;
+    }
+    .contact form {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    .project-section {
+        padding: 8rem 1.5rem 2rem 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
