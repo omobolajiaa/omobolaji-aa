@@ -580,3 +580,12 @@ ol li {
     right: 0;
   }
 }
+.logo {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.logo:hover {
+    color: var(--blue-color)
+}
