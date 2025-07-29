@@ -596,5 +596,7 @@ ol li {
         width: 400px;
         height: 400px;
         margin: 2rem auto;
+        background-color: none !important;
+        border: 0.5rem linen var(--blue-color) !important;
     }
 }
