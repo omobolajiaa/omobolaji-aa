@@ -590,3 +590,11 @@ ol li {
 .logo:hover {
     color: var(--text-color)
 }
+
+@media (max-width: 768px) {
+    .img {
+        width: 400px;
+        height: 400px;
+        margin: 2rem auto;
+    }
+}
