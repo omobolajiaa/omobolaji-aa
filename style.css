@@ -120,11 +120,12 @@ header nav .active{
     box-shadow: 0 0 0.9rem var(--blue-color);
 }
 .img{
-    border: .5rem solid var(--text-color);
-    width: 20%;
-    border-radius: 40%;
-    box-shadow: 1rem 1rem 2rem var(--blue-color);
-    background-color: var(--blue-color);
+    border: 0.5rem linen var(--text-color);
+    width: 550px;
+    height: 600px;
+    border-radius: 100%;
+    box-shadow: .5rem .5rem 2rem var(--blue-color);
+    background-color: none;
     margin-right: 12rem;
     transform: scale(0);
     animation: scale_img 1s ease forwards .5s;
