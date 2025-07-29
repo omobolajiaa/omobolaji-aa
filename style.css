@@ -581,9 +581,9 @@ ol li {
   }
 }
 .logo {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 5rem;
+    text-decoration: none !important;
+    color: var(--text-color) !important;
+    font-size: 5rem !important;
     font-weight: bold;
 }
 .logo:hover {
