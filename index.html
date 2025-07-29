@@ -7,7 +7,7 @@ and work well on both desktop and mobile devices.
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omobolaji Aremu | Data Analytics Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -20,7 +20,11 @@ and work well on both desktop and mobile devices.
 <body>
     <header>
         <h1>Bola</h1>
-        <nav>
+        <!--Hamburger Icon-->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="bx bx-menu"></i>
+        </div>
+        <nav id="nav-menu">
             <a href="#" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
@@ -238,5 +242,13 @@ and work well on both desktop and mobile devices.
     </section>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        toggleBtn.addEventListener('click', ()=> {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
