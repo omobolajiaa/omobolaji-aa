@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Documents/Data_Analytics/CodeBasics/Projects_Portfolio"
+		}
+	],
+	"settings": {
+		"jupyter.interactiveWindow.textEditor.executeSelection": true,
+		"liveServer.settings.multiRootWorkspaceName": "jupyter_env"
+	}
+}

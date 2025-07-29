@@ -1,0 +1,41 @@
+<!--Health Analytics html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Analytics of Patients | Bola Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Bola</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="healthanalytics_content.html" class="active">
+                Health Analytics of Patients
+            </a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="project-section">
+            <div id="project-content">
+                <!--Content will be inserted here-->
+            </div>
+        </section>
+    </main>
+    <script>
+        fetch('healthanalytics_content.html')
+        .then(response =>response.text())
+        .then(data => {
+            document.getElementById('project-content').innerHTML = data;
+        })
+        .catch(error => {
+            console.error("Error loading content:", error);
+            document.getElementById('project-content').innerHTML = "<p>Content failed to load.</p>";
+        })
+    </script>
+</body>
+</html>
