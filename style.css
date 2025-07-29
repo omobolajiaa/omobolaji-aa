@@ -594,7 +594,7 @@ ol li {
 @media (max-width: 768px) {
     .img {
         width: 400px;
-        height: 400px;
+        height: 450px;
         margin: 2rem auto;
         background-color: none !important;
         border: 0.5rem linen var(--blue-color) !important;
