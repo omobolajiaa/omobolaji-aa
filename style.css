@@ -583,9 +583,9 @@ ol li {
 .logo {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 2.4rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 .logo:hover {
-    color: var(--blue-color)
+    color: var(--text-color)
 }
