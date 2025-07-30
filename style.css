@@ -22,13 +22,14 @@ body{
     background-position: center;        
 }
 .Home{
-    min-height: 110vh;
+    min-height: 100vh;
     color: var(--text-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    padding-top: 7rem;
+    padding-top: 5rem;
+    margin-top: 8rem;
 }
 header{
     position:fixed;
@@ -41,9 +42,23 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5rem;
+    padding: 0.5rem 3rem;
     animation: to_bottom 1s ease forwards;
     height: auto;
+}
+.logo {
+    height: 250px;
+    width: 250px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header nav {
+    padding-top: 5%;
+    padding-bottom: 20%;
+    align-items: center;
+    gap: 2rem;
 }
 header nav a{
     text-decoration: none;
@@ -77,6 +92,7 @@ header nav .active{
 .text-box p{
     margin: 2.5rem 0;
     font-size: 1.6rem;
+    text-align: justify;
     animation: to_left 1s ease forwards 0.2s;
 }
 .content-box .icon-box{
@@ -136,24 +152,31 @@ header nav .active{
     opacity: 0;
 }
 .about{
-    min-height: 100vh;
+    min-height: 80vh;
     color: var(--text-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    padding: 10rem 15rem;
-    padding-top: 12rem;
+    padding: 12rem 15rem 45rem 15rem;
+    margin-top: 15%;
+    margin-right: 15%;
+    margin-left: 15%;
+    font-size: 1.8rem;
+    margin-bottom: 0%;
+    flex-direction: column;
+    text-align: justify;
 }
 .about-container h2{
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 2rem;
     color: var(--blue-color);
     margin-left: 45%;
+    transition: .2s;
 }
 .about-container p{
     font-size: 1.6rem;
-    line-height: 1.8;
+    line-height: 1.5rem;
     margin-bottom: 1.5rem;
     margin: 2.5rem 0;
     margin-left: 45%;
@@ -161,10 +184,12 @@ header nav .active{
 }
 .projects{
     padding: 10rem 5rem 5rem;
-    max-height: 100vh;
+    min-height:100vh;
     color: var(--blue-color);
     display: flex;
-    padding-top: 10%;
+    padding-top: 15rem; /* Increased padding-top to avoid overlap with navbar */
+    margin-top: 8rem;
+    box-sizing: border-box;
 }
 .projects-container h2{
     font-size: 4rem;
@@ -243,7 +268,8 @@ header nav .active{
     height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 20%;
+    padding-top: 10rem;
+    margin-top: 8rem;
 }
 .services-container h2 {
     font-size: 4rem;
@@ -291,7 +317,8 @@ header nav .active{
 .contact {
     color: var(--text-color);
     height: 100vh;
-    padding-top: 20%;
+    padding-top: 10rem;
+    margin-top: 8rem;
 }
 .contact-container h2 {
     font-size: 4rem;
@@ -380,14 +407,15 @@ header nav .active{
 .project-section {
     padding: 12rem 10rem 6rem;
     color: var(--text-color);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-left: 25%;
+    margin-left: 10%;
     margin-right: 25%;
 }
 
 .project-section h2 {
+    margin-top: 2rem;
     font-size: 3rem;
     margin-bottom: 2rem;
     color: var(--blue-color);
@@ -404,12 +432,14 @@ header nav .active{
     line-height: 1.8;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    text-align: justify;
 }
 ol {
     padding-left: 2.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
     line-height: 1.8;
+    text-align: justify;
 }
 ol li {
     margin-bottom: 1rem;
@@ -441,7 +471,7 @@ ol li {
 /* ======= MOBILE PHONES (max-width: 768px) ====== */
 @media screen and (max-width: 768px) {
     html {
-        font-size: 55%;
+        font-size: 55%; /* slightly smaller on mobile */
     }
     header {
         padding: 2rem 3rem;
@@ -475,7 +505,7 @@ ol li {
     .about,
     .services,
     .contact {
-        padding: 5rem 2rem;
+        padding: 6rem 2rem;
         flex-direction: column;
         align-items: center;
     }
@@ -491,14 +521,31 @@ ol li {
         justify-content: flex-start;
     }
     .about {
+        min-height: 100vh;
+        color: var(--text-color);
+        display: flex;
         flex-direction: column;
-        padding: 8rem 2rem 2rem 2rem;
-        align-items: flex-start;
+        justify-content: center;
+        padding: 8rem 3rem;
+        margin: 0 auto;
+        font-size: 1.8;
+        text-align: center;
     }
-    .about-container h2,
+    .about-container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .about-container h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: var(--blue-color);
+        text-align: center;
+    }
     .about-container p {
-        margin-left: 0;
+        font-size: 1.7rem;
+        line-height: 1.8;
         text-align: left;
+        margin-bottom: 2rem;
     }
     .projects {
         flex-direction: column;
@@ -587,10 +634,11 @@ ol li {
   }
 }
 .logo img {
-    height: 250px;
-    width: 250px;
+    height: 120px;
+    width: 120px;
     display: block;
-    padding-left: 0%;
+    margin: 0;
+    padding: 0;
 }
 .logo {
     text-decoration: none !important;

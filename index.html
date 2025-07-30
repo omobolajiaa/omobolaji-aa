@@ -9,32 +9,37 @@ and work well on both desktop and mobile devices.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omobolaji Aremu | Data Analytics Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Meta tags for SEO & Sharing-->
     <meta property="og:title" content="Omobolaji Aremu | Data Analytics Portfolio">
     <meta property="og:description" content="Explore dashboards and analytics projects by Omobolaji Aremu.">
     <meta property="og:image" content="https://omobolajiaa.github.io/omobolaji-aa/profilpic_nbg.png">
     <meta property="og:url" content="https://omobolajiaa.github.io/omobolaji-aa">
     <meta property="og:type" content="website">
+
+    <!--Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!--External CSS and Icons-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1><a href="index.html" class="logo">
-            <img src="new_logo.png" alt="BolaDA">
-        </a></h1>
-        <!--Hamburger Icon-->
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="bx bx-menu"></i>
-        </div>
-        <nav id="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+        <a href="index.html">
+            <img src="new_logo.png" alt="BolaDA" class="logo" />
+        </a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="research.html">Research</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Me</a>
         </nav>
+        <!--Hamburger Icon for mobile-->
+        <div class="menu-toggle"><i class="bx bx-menu"></i></div>
     </header>
+    <main>
     <section class="Home">
         <div class="content-box">
             <div class="icon-box">
@@ -65,188 +70,14 @@ and work well on both desktop and mobile devices.
         </div>
         <img src="./finalpic.png" class="img" alt="">
     </section>
-    <section class="about" id="about">
-        <div class="about-container">
-            <h2> About Me</h2>
-            <p>
-                I'm Omobolaji Aremu, a passionate data analyst with a strong
-                foundation in data analytics, economics, and business management.
-                I specialise in transforming complex data into actionable business
-                insights using tools like Excel, SQL, Power BI, Tableau, Python, and R.
-            </p>
-            <p>
-                My work operates at the intersection of analytics, strategic thinking, and measurable impact. 
-                I am deeply interested in extracting meaningful insights from data and delivering solutions 
-                to complex business challenges—whether through rigorous research or advanced data analytics.
-            </p>        
-        </div>
-    </section>
-    <section class="projects" id="projects">
-        <div class="projects-container">
-            <h2>Projects</h2>
-            <div class="project-cards">
-                <!--Project 1-->
-                <div class="card">
-                    <img src="./dash1.png" alt="Global Electronics Retailer Dashboard" class="project-image">
-                    <h3>Global Electronics Retailer</h3>
-                    <p>This is a multi-page Power BI dashboard analysing the sales performance, 
-                        product performance, store performance, and delivery performance. The 
-                        data was first pre-processed using Python where RFM analysis was conducted to
-                        segment the customers and products based on their performance.
-                        This project reveals the major painpoint of the business which is its poor 
-                        delivery time for customers online orders. Regions, products and brands causing 
-                        much of this delay where identified for the business to take decisive action on 
-                        solving the problem.
-                    </p>
-                    <a href="globalelectronicsretailer.html">View Projects</a>
-                </div>
-                <!-- Project 2 -->
-                <div class="card">
-                    <img src="./hostpital1.png" alt="Health Analytics of Patients" class="project-image">
-                    <h3>Health Analytics of Patients</h3>
-                    <p>     
-                        This one-page interactive dashboard explores patients' hospital utilisation patterns and insurance
-                        coverage within Massachusetts General Hospital using synthetic data from 2011 to 2022. Developed in 
-                        Power BI, the project intergrates clinical and financial dimensions to illuminate how patients engage
-                        with hospital services and how insurance coverage impacts access and cost.
-                    </p>
-                    <a href="healthanalytics.html">View Project</a>
-                </div>
-                <!-- Project 3 -->
-                 <div class="card">
-                    <img src="./adventure1.png" alt="Adventure Works Analytics" class="project-image">
-                    <h3>Adventure Works Analytics</h3>
-                    <p> This is an insightful project that utilises various technical tools in developing a clean 
-                        dashboard that answers stakeholders of Adventure Works business questions. KPIs required to provide
-                        solutions to business problems were developed appropriately and visualised using appropriate visuals.
-                    </p>
-                    <a href="adventureworks.html">View Project</a>
-                </div>
-                    <!--Project 4-->
-                <div class="card">
-                    <img src="./dash1.png" alt="Global Electronics Retailer Dashboard" class="project-image">
-                    <h3>Global Electronics Retailer</h3>
-                    <p>This is a multi-page Power BI dashboard analysing the sales performance, 
-                        product performance, store performance, and delivery performance. The 
-                        data was first pre-processed using Python where RFM analysis was conducted to
-                        segment the customers and products based on their performance. 
-                        This project reveals the major painpoint of the business which is its poor 
-                        delivery time for customers online orders. Regions, products and brands causing 
-                        much of this delay where identified for the business to take decisive action on 
-                        solving the problem.
-                    </p>
-                    <a href="#">View Projects</a>
-                </div>
-                <!-- Project 5 -->
-                <div class="card">
-                    <img src="./dash1.png" alt="Customer Churn Prediction" class="project-image">
-                    <h3>Customer Churn Prediction</h3>
-                    <p> Built a machine learning model in Python to predict customer churn. 
-                        The project involved feature engineering, model selection, and business 
-                        recommendations for retention.
-                    </p>
-                    <a href="#">View Project</a>
-                </div>
-                <!-- Project 6 -->
-                 <div class="card">
-                    <img src="./dash1.png" alt="Sales Trend Analysis" class="project-image">
-                    <h3>Sales Trend Analysis</h3>
-                    <p> Created an interactive Tableau dashboard to visualize seasonal trends, regional 
-                        performance, and promotional impact across different product categories.
-                    </p>
-                    <a href="#">View Project</a>
-                </div>
-                <!-- Project 7-->
-                 <div class="card">
-                    <img src="./dash1.png" alt="Sales Trend Analysis" class="project-image">
-                    <h3>Sales Trend Analysis</h3>
-                    <p> Created an interactive Tableau dashboard to visualize seasonal trends, regional 
-                        performance, and promotional impact across different product categories.
-                    </p>
-                    <a href="#">View Project</a>
-                </div>
-                    <!--Project 8-->
-                <div class="card">
-                    <img src="./dash1.png" alt="Global Electronics Retailer Dashboard" class="project-image">
-                    <h3>Global Electronics Retailer</h3>
-                    <p>This is a multi-page Power BI dashboard analysing the sales performance, 
-                        product performance, store performance, and delivery performance. The 
-                        data was first pre-processed using Python where RFM analysis was conducted to
-                        segment the customers and products based on their performance. 
-                        This project reveals the major painpoint of the business which is its poor 
-                        delivery time for customers online orders. Regions, products and brands causing 
-                        much of this delay where identified for the business to take decisive action on 
-                        solving the problem.
-                    </p>
-                    <a href="#">View Projects</a>
-                </div>
-                <!-- Project 9-->
-                <div class="card">
-                    <img src="./dash1.png" alt="Customer Churn Prediction" class="project-image">
-                    <h3>Customer Churn Prediction</h3>
-                    <p> Built a machine learning model in Python to predict customer churn. 
-                        The project involved feature engineering, model selection, and business 
-                        recommendations for retention.
-                    </p>
-                    <a href="#">View Project</a>
-                </div>
-                <!-- Project 10-->
-                 <div class="card">
-                    <img src="./dash1.png" alt="Sales Trend Analysis" class="project-image">
-                    <h3>Sales Trend Analysis</h3>
-                    <p> Created an interactive Tableau dashboard to visualize seasonal trends, regional 
-                        performance, and promotional impact across different product categories.
-                    </p>
-                    <a href="#">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="services" id="services">
-        <div class="services-container">
-            <h2>Services</h2>
-            <div class="service-boxes">
-                <div class="service">
-                    <h3>Data Analysis</h3>
-                    <p>Conducting end-to-end analysis from data extraction and cleaning to exploratory
-                        analysis and insight generation - to inform business decisions and uncover 
-                        opportunities.</p>
-                </div>
-                <div class="service">
-                    <h3>Dashboard Design</h3>
-                    <p>Designing interactive, user-centric dashboards in Power BI and Tableau that 
-                        transform raw data into compelling visual narratives for strategic decision-making.</p>
-                </div>
-                <div class="service">
-                    <h3>Statistical Modeling</h3>
-                    <p>Developing statistical, econometric and predictive models using R and Python.</p>
-                </div>
-                <div class="service">
-                    <h3>Research Works</h3>
-                    <p>Research project works from topic development to research design, analysis, 
-                        and final report draft.</p>
-                </div>
-                <div class="service">
-                    <h3>Content Writing</h3>
-                    <p>Crafting clear, engaging, and research-driven content tailored to effectively
-                        communicate complex data insights and business concepts to diverse audiences.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact" id="contact">
-        <div class="contact-container">
-            <h2>Contact Me</h2>
-            <form action="https://formsubmit.co/omobolajiadedasola@gmail.com" method="POST">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="thank-you.html">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" email="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
+</main>
+    
+    <!--Footer goes in here-->
+    <footer>
+        <p>&copy; 2025 Omobolaji Aremu</p>
+    </footer>
+
+    <!--Script goes in here-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
     <script>
