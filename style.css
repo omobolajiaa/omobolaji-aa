@@ -28,6 +28,7 @@ body{
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    padding-top: 7rem;
 }
 header{
     position: fixed;
@@ -40,8 +41,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 10rem;
+    padding: 1.5rem 5rem;
     animation: to_bottom 1s ease forwards;
+    height: auto;
 }
 header nav a{
     text-decoration: none;
@@ -580,6 +582,12 @@ ol li {
   nav.active {
     right: 0;
   }
+}
+.logo img {
+    height: 250px;
+    width: 250px;
+    display: block;
+    padding-left: 0%;
 }
 .logo {
     text-decoration: none !important;
