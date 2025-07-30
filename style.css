@@ -22,7 +22,7 @@ body{
     background-position: center;        
 }
 .Home{
-    min-height: 100vh;
+    min-height: 110vh;
     color: var(--text-color);
     display: flex;
     justify-content: space-between;
@@ -31,7 +31,7 @@ body{
     padding-top: 7rem;
 }
 header{
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     z-index: 99;
@@ -161,9 +161,10 @@ header nav .active{
 }
 .projects{
     padding: 10rem 5rem 5rem;
-    min-height: 100vh;
+    max-height: 100vh;
     color: var(--blue-color);
     display: flex;
+    padding-top: 10%;
 }
 .projects-container h2{
     font-size: 4rem;
@@ -242,6 +243,7 @@ header nav .active{
     height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 20%;
 }
 .services-container h2 {
     font-size: 4rem;
@@ -288,7 +290,8 @@ header nav .active{
 }
 .contact {
     color: var(--text-color);
-    height: 80vh;
+    height: 100vh;
+    padding-top: 20%;
 }
 .contact-container h2 {
     font-size: 4rem;
