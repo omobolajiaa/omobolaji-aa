@@ -582,11 +582,6 @@ ol li {
     .contact,
     .project-section {
         width: 100%;
-        flex-direction: column;
-        text-align: center;
-    }
-    .Home {
-        width: 100% !important;
     }
     .content-box .icon-box{
         display: flex;
