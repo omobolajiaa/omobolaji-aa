@@ -579,6 +579,7 @@ ol li {
         width:auto;
         display: flex;
         flex-direction: column;
+        flex-flow: wrap;
     }
     .projects,
     .services,
@@ -612,6 +613,8 @@ ol li {
     .text-box {
         width: 120%;
         margin: 0 auto;
+        padding: 0 1rem;
+        text-align: justify
     }
     .text-box p {
         font-size: 1.6rem;
