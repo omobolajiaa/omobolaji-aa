@@ -575,9 +575,12 @@ ol li {
     .icon-box {
         margin-top: 6rem;
     }
-    .Home,
+    .Home {
+        width:auto;
+        display: flex;
+        flex-direction: column;
+    }
     .projects,
-    .about,
     .services,
     .contact,
     .project-section {
@@ -607,10 +610,8 @@ ol li {
         box-shadow: 0 0 0.9rem var(--blue-color);
     }
     .text-box {
-        width: 90%;
-        padding: 0 2em;
-        text-align: justify;
-        margin: 0 auto
+        width: 120%;
+        margin: 0 auto;
     }
     .text-box p {
         font-size: 1.6rem;
