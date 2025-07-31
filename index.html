@@ -25,8 +25,9 @@ and work well on both desktop and mobile devices.
 </head>
 <body>
     <header>
-        <a href="index.html">
+        <a href="index.html" class="logo-container">
             <img src="new_logo.png" alt="BolaDA" class="logo" />
+            <span class="logo-text">BolaDA</span>
         </a>
         <nav class="navbar">
             <a href="index.html" class="active">Home</a>
@@ -73,20 +74,40 @@ and work well on both desktop and mobile devices.
 </main>
     
     <!--Footer goes in here-->
-    <footer>
-        <p>&copy; 2025 Omobolaji Aremu</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Omobolaji Aremu. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://facebook.com/mobeenet" target="_blank"><i class='bx  bxl-facebook'></i>
+                <a href="https://linkedin.com/in/omobolaji-aremu-19b33388" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/omobolajiaa" target="_blank"><i class='bx bxl-github'></i></a>
+            </div> 
+        </div>
     </footer>
 
     <!--Script goes in here-->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
     <script>
-        const toggleBtn = document.getElementById('menu-toggle');
-        const navMenu = document.getElementById('nav-menu');
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.navbar');
 
-        toggleBtn.addEventListener('click', ()=> {
-            navMenu.classList.toggle('active');
+        menuToggle.addEventListener('click', function() {
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('open');
         });
+
+        // Optional: Close menu when a link is clicked (for single-page feel)
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', function() {
+                navbar.classList.remove('active');
+                menuToggle.classList.remove('open');
+            });
+        });
+    });
     </script>
+</body>
+</html>
 </body>
 </html>

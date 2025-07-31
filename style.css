@@ -54,6 +54,9 @@ header{
     top: 0;
     left: 0;
 }
+.logo-text {
+    display: none;
+}
 header nav {
     padding-top: 5%;
     padding-bottom: 20%;
@@ -95,7 +98,7 @@ header nav .active{
     text-align: justify;
     animation: to_left 1s ease forwards 0.2s;
 }
-.content-box .icon-box{
+.content-box .icon-box {
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -103,6 +106,8 @@ header nav .active{
     margin-top: 2rem;
     opacity: 0;
     animation: to_right 1s ease forwards 0.5s;
+    position: relative;
+    z-index: 1001;
 
 }
 .content-box .icon-box i{
@@ -467,124 +472,180 @@ ol li {
     box-shadow: 0 0 0.8rem var(--blue-color);
     color: var(--text-color);
 }
-
-/* ======= MOBILE PHONES (max-width: 768px) ====== */
-@media screen and (max-width: 768px) {
+/* ======= TABLETS (max-width: 1024px) ====== */
+@media screen and (max-width: 1024px) {
     html {
-        font-size: 55%; /* slightly smaller on mobile */
-    }
-    header {
-        padding: 2rem 3rem;
-        font-size: 2rem;
-        flex-direction: column;
-        text-align: center;
-    }
-    header nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-    .Home {
-        flex-direction: column;
-        padding: 5rem 2rem;
-        text-align: center;
-    }
-    .content-box {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        margin:0;
-    }
-    .img {
-        width: 50%;
-        margin: 3rem auto 0;
+        font-size: 58%;
     }
     .projects,
     .about,
     .services,
     .contact {
-        padding: 6rem 2rem;
-        flex-direction: column;
-        align-items: center;
-    }
-    .text-box {
-        width: 100%;
-        margin: 0;
-        padding: 0 2rem;
-    }
-    .content-box .icon-box {
-        flex-direction: row;
-        gap: 2rem;
-        margin: 2rem 0 0 0;
-        justify-content: flex-start;
-    }
-    .about {
-        min-height: 100vh;
-        color: var(--text-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 8rem 3rem;
-        margin: 0 auto;
-        font-size: 1.8;
-        text-align: center;
-    }
-    .about-container {
-        max-width: 768px;
-        margin: 0 auto;
+        padding: 8rem 4rem;
     }
     .about-container h2 {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-        color: var(--blue-color);
+        font-size: 4rem;
         text-align: center;
     }
     .about-container p {
-        font-size: 1.7rem;
-        line-height: 1.8;
-        text-align: left;
-        margin-bottom: 2rem;
-    }
-    .projects {
-        flex-direction: column;
-        padding: 8rem 1.5rem 2rem 1.5rem;
+        font-size: 1.6rem;
+        text-align: justify;
     }
     .projects-container h2 {
-        margin-left: 0;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .project-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-container h2 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .contact form {
+        margin: 0 10%;
+    }
+    .project-section {
+        padding: 8rem 5rem;
+        margin: 0;
+    }
+}
+/* ======= MOBILE PHONES (max-width: 768px) ====== */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 1rem 2rem;
+        z-index: 1000;
+    }
+    .logo {
+        display: none;
+    }
+    .logo-text {
+        display: inline-block;
+        text-decoration: none !important;
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: var(--text-color);
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+    header nav a {
+        margin: 0.5rem;
+    }
+    .menu-toggle {
+        display: block;
         font-size: 3rem;
-        text-align: left;
+        color: var(--text-color);
+        cursor: pointer;
+        z-index: 1000;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 60%;
+        background-color: steelblue;
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        padding-top: 10rem;
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+    nav a {
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    nav.active {
+        right: 0;
+    }
+    .icon-box {
+        margin-top: 6rem;
+    }
+    .Home,
+    .projects,
+    .about,
+    .services,
+    .contact,
+    .project-section {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-box .icon-box{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin-right: 3rem;
+        margin-top: 5rem;
+        opacity: 0;
+        animation: to_right 1s ease forwards 0.5s;
+    }
+    .content-box .icon-box i {
+        color: var(--blue-color);
+        padding: .7rem;
+        font-size: 2.2rem;
+        cursor: pointer;
+        border: .3rem solid var(--blue-color);
+        border-radius: 50%;
+        transition: .2s;
+    }
+    .content-box .icon-box i:hover{
+        color: var(--text-color);
+        background-color: var(--blue-color);
+        box-shadow: 0 0 0.9rem var(--blue-color);
+    }
+    .text-box {
+        width: 100%;
+        padding: 0 1.5rem;
+        text-align: center;
+    }
+    .content-box {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .img {
+        width: 80%;
+        margin: 2rem auto 0;
+    }
+    .about-container h2,
+    .about-container p,
+    .projects-container h2,
+    .contact-container h2 {
+        text-align: center;
+        margin-left: 0;
+    }
+    .about-container p,
+    .project-section p,
+    ol {
+        text-align: justify;
+        padding: 0;
     }
     .project-cards {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    .services {
-        padding: 8rem 1.5rem 2rem 1.5rem;
-        max-width: 100%;
-    }
-    .services-container h2 {
-        font-size: 3rem;
-    }
     .service-boxes {
         grid-template-columns: 1fr;
         grid-gap: 1.5rem;
     }
-    .contact-container h2 {
-        margin-left: 0;
-        font-size: 3rem;
-    }
     .contact form {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 2rem;
-        padding: 0 1rem;
-    }
-    .project-section {
-        padding: 8rem 1.5rem 2rem 1.5rem;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0;
+        padding: 0 1.5rem;
     }
 }
 
@@ -647,16 +708,32 @@ ol li {
     font-weight: bold;
 }
 .logo:hover {
-    color: var(--text-color)
+    color: var(--text-color);
 }
-
-@media (max-width: 768px) {
-    .img {
-        width: 400px !important;
-        height: 450px !important;
-        margin: 2rem auto;
-        background-color: none !important;
-        border: 0.5rem linen var(--blue-color) !important;
-        display: block;
-    }
+.footer {
+    color: var(--text-color);
+    padding: 1.5rem 2.5rem;
+    font-size: 1.4rem;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-text {
+    margin: 0;
+}
+.footer-socials {
+    display: flex;
+    gap: 1.5rem;
+}
+.footer-socials a {
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+.footer-socials a:hover {
+    color: var(--blue-color)
 }
