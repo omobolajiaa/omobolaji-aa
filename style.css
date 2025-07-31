@@ -581,9 +581,12 @@ ol li {
     .services,
     .contact,
     .project-section {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
         text-align: center;
+    }
+    .Home {
+        width: 100% !important;
     }
     .content-box .icon-box{
         display: flex;
@@ -609,9 +612,15 @@ ol li {
         box-shadow: 0 0 0.9rem var(--blue-color);
     }
     .text-box {
-        width: 100%;
-        padding: 0 1.5rem;
-        text-align: center;
+        width: 90%;
+        padding: 0 2em;
+        text-align: justify;
+        margin: 0 auto
+    }
+    .text-box p {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        animation: to_left 1s ease forwards 0.2s;
     }
     .content-box {
         flex-direction: column;
