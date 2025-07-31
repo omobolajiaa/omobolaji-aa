@@ -611,10 +611,9 @@ ol li {
         box-shadow: 0 0 0.9rem var(--blue-color);
     }
     .text-box {
-        width: 120%;
         margin: 0 auto;
-        padding: 0 1rem;
-        text-align: justify
+        text-align: left;
+        min-width: 130%;
     }
     .text-box p {
         font-size: 1.6rem;
@@ -623,8 +622,8 @@ ol li {
     }
     .content-box {
         flex-direction: column;
-        align-items: center;
-        margin: 0;
+        align-items:center;
+        margin-left: 18%;
     }
     .img {
         width: 80%;
@@ -731,8 +730,7 @@ ol li {
     margin: 0 auto;
 }
 .footer-text {
-    margin: 0;
-}
+    margin: 0;}
 .footer-socials {
     display: flex;
     gap: 1.5rem;

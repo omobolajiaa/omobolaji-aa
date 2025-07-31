@@ -3,17 +3,18 @@
 <html lang="en">
     <head>
     <meta charset="UTF-8">
-    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Electronics Retailer | Bola Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="index.html">
+        <a href="index.html" class="logo-container">
             <img src="new_logo.png" alt="BolaDA" class="logo" />
+            <span class="logo-text">BolaDA</span>
         </a>
-        <nav>
+        <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="projects.html" class="active">Projects</a>
@@ -21,7 +22,10 @@
             <a href="services.html">Services</a>
             <a href="contact.html">Contact Me</a>
         </nav>
+        <!--Hamburger Icon for mobile-->
+        <div class="menu-toggle"><i class="bx bx-menu"></i></div>
     </header>
+
     <main>
         <section class="project-section">
             <div id="project-content">
@@ -29,7 +33,18 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Omobolaji Aremu. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://facebook.com/mobeenet" target="_blank"><i class='bx  bxl-facebook'></i>
+                <a href="https://linkedin.com/in/omobolaji-aremu-19b33388" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/omobolajiaa" target="_blank"><i class='bx bxl-github'></i></a>
+            </div> 
+        </div>
+    </footer>
     <script>
+        // Load external project content
         fetch('globalelectronic_content.html')
         .then(response =>response.text())
         .then(data => {
@@ -38,7 +53,24 @@
         .catch(error => {
             console.error("Error loading content:", error);
             document.getElementById('project-content').innerHTML = "<p>Content failed to load.</p>";
-        })
+        });
+        // Hamburger toggle functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+        
+        menuToggle.addEventListener('click', function () {
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('open');
+        });
+
+        document.querySelectorAll('.navbar a').forEach(Link => {
+            link.addEventListener('click', function () {
+                navbar.classList.remove('active');
+                menuToggle.classList.remove('open');
+            });
+        });
+        });
     </script>
 </body>
 </html>
