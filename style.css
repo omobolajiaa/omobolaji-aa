@@ -153,6 +153,14 @@ header nav .active{
     transform: scale(0);
     animation: scale_img 1s ease forwards .5s;
 }
+.img_sql {
+    width: 1050px;
+    height: 700px;
+    background-color: none;
+    margin-right: 12rem;
+    transform: scale(0);
+    animation: scale_img 1s ease forwards .5s;
+}
 .text-box *{
     opacity: 0;
 }
