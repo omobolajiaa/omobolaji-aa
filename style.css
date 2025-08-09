@@ -482,24 +482,7 @@ ol li {
     box-shadow: 0 0 0.8rem var(--blue-color);
     color: var(--text-color);
 }
-.btn-download-file {
-    display: inline-block;
-    padding: 1rem 1.5rem;
-    background-color: var(--blue-color);
-    color: var(--text-color);
-    font-size: 1.6rem;
-    border-radius: 0.6rem;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
 
-.btn-download-file:hover {
-    background-color: #008ecc;
-    box-shadow: 0 0 0.8rem var(--blue-color);
-    color: var(--text-color);
-}
 /* ======= TABLETS (max-width: 1024px) ====== */
 @media screen and (max-width: 1024px) {
     html {
