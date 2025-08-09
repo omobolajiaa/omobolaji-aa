@@ -439,6 +439,16 @@ header nav .active{
     margin-bottom: 1.5rem;
     text-align: justify;
 }
+ul {
+    padding-left: 2.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    line-height: 1.8;
+    text-align: justify;
+}
+ul li {
+    margin-bottom: 1rem;
+}
 ol {
     padding-left: 2.5rem;
     font-size: 1.6rem;
